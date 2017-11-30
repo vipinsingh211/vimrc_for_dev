@@ -12,6 +12,7 @@ set showcmd
 set incsearch
 set hlsearch
 "set paste
+set clipboard=unnamed
 
 set mouse=a
 
@@ -145,3 +146,9 @@ let g:PyFlakeSignStart = 1
 let g:PyFlakeMaxLineLength = 100
 let g:PyFlakeRangeCommand = 'Q'
 let g:PyFlakeForcePyVersion = 3
+
+
+"--------------PYLINT------------------
+set makeprg=pylint\ --reports=n\ --msg-template=\"{path}:{line}:\ {msg_id}\ {symbol},\ {obj}\ {msg}\"\ %:p
+set errorformat=%f:%l:\ %m
+"--------------PYLINT------------------
